@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad12_9rounded" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AlertView" customModule="SOSVIagens" customModuleProvider="target">
+            <connections>
+                <outlet property="comments" destination="6lE-ha-fMO" id="rTi-4E-gJ5"/>
+                <outlet property="infolbl" destination="WSH-L0-FEx" id="58v-RJ-izF"/>
+                <outlet property="parentview" destination="HRn-Ef-U5N" id="RX4-cz-Pha"/>
+                <outlet property="rating" destination="brQ-iy-r4g" id="B4M-P5-aOH"/>
+                <outlet property="view" destination="HRn-Ef-U5N" id="KnN-XQ-vy0"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="HRn-Ef-U5N" customClass="AlertView" customModule="SOSVIagens" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="490"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <navigationBar contentMode="scaleToFill" translucent="NO" largeTitles="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SXo-id-Z4V">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="95.5"/>
+                    <color key="barTintColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <textAttributes key="titleTextAttributes">
+                        <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                    </textAttributes>
+                    <items>
+                        <navigationItem title="Avalie o atendimento" id="96Y-bq-774"/>
+                    </items>
+                </navigationBar>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Como foi sua experiência com a CCRodovias na rodovia Raposo Tavares?" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WSH-L0-FEx">
+                    <rect key="frame" x="0.0" y="109" width="375" height="83"/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                    <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="highlightedColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="brQ-iy-r4g" customClass="CosmosView" customModule="Cosmos">
+                    <rect key="frame" x="97.5" y="193" width="180" height="32"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="starSize">
+                            <real key="value" value="32"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="filledColor">
+                            <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="filledBorderColor">
+                            <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="emptyBorderColor">
+                            <color key="value" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="emptyColor">
+                            <color key="value" cocoaTouchSystemColor="lightTextColor"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Descreva sua experiência..." textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="6lE-ha-fMO">
+                    <rect key="frame" x="27.5" y="233" width="320" height="196"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="196" id="iPy-HC-BMc"/>
+                    </constraints>
+                    <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                </textView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Pq-Ck-xV6" customClass="MDCButton">
+                    <rect key="frame" x="0.0" y="437" width="375" height="53"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="53" id="kbu-DL-tFK"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
+                    <state key="normal" title="Enviar">
+                        <color key="titleColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="SendComments:" destination="-1" eventType="touchUpInside" id="tcx-dC-J50"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="SXo-id-Z4V" firstAttribute="width" secondItem="xRV-Iv-xyl" secondAttribute="width" id="24q-Sh-ccf"/>
+                <constraint firstItem="8Pq-Ck-xV6" firstAttribute="top" secondItem="6lE-ha-fMO" secondAttribute="bottom" constant="8" id="ClM-OJ-nrv"/>
+                <constraint firstItem="6lE-ha-fMO" firstAttribute="top" secondItem="HRn-Ef-U5N" secondAttribute="top" constant="233" id="Ec2-ar-ad1"/>
+                <constraint firstItem="6lE-ha-fMO" firstAttribute="top" secondItem="WSH-L0-FEx" secondAttribute="bottom" constant="41" id="Fqf-sh-l5U"/>
+                <constraint firstItem="brQ-iy-r4g" firstAttribute="centerX" secondItem="xRV-Iv-xyl" secondAttribute="centerX" id="OD3-6W-9ml"/>
+                <constraint firstItem="WSH-L0-FEx" firstAttribute="width" secondItem="xRV-Iv-xyl" secondAttribute="width" id="Ttt-Af-FLn"/>
+                <constraint firstItem="8Pq-Ck-xV6" firstAttribute="centerX" secondItem="xRV-Iv-xyl" secondAttribute="centerX" id="Ya0-Kt-CWd"/>
+                <constraint firstItem="6lE-ha-fMO" firstAttribute="width" secondItem="xRV-Iv-xyl" secondAttribute="width" multiplier="0.853333" id="d5A-wd-mAP"/>
+                <constraint firstItem="SXo-id-Z4V" firstAttribute="top" secondItem="HRn-Ef-U5N" secondAttribute="top" id="dGG-c9-dGy"/>
+                <constraint firstItem="brQ-iy-r4g" firstAttribute="top" secondItem="HRn-Ef-U5N" secondAttribute="top" constant="193" id="itT-ys-NaF"/>
+                <constraint firstItem="SXo-id-Z4V" firstAttribute="leading" secondItem="WSH-L0-FEx" secondAttribute="leading" id="uCa-VS-Wpm"/>
+                <constraint firstItem="WSH-L0-FEx" firstAttribute="top" secondItem="SXo-id-Z4V" secondAttribute="bottom" constant="14" id="wL1-la-Odk"/>
+                <constraint firstItem="xRV-Iv-xyl" firstAttribute="trailing" secondItem="WSH-L0-FEx" secondAttribute="trailing" id="yRW-3g-pRV"/>
+                <constraint firstItem="6lE-ha-fMO" firstAttribute="centerX" secondItem="xRV-Iv-xyl" secondAttribute="centerX" id="zJD-Xg-CTg"/>
+                <constraint firstItem="8Pq-Ck-xV6" firstAttribute="width" secondItem="xRV-Iv-xyl" secondAttribute="width" id="znt-bc-z4M"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="xRV-Iv-xyl"/>
+            <point key="canvasLocation" x="-102.17391304347827" y="59.598214285714285"/>
+        </view>
+    </objects>
+</document>
